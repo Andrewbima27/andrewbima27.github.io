@@ -1,0 +1,23 @@
+{
+  "greeting": "Hallo",
+  "name": "Cacrut",
+  "greetingText": "I really like your name btw hehe",
+  "wishText": "May all your wishes come true! ;)",
+  "imagePath": "img/cacrut2.jpeg",
+  "text1": "It's your birthday!!! :D",
+  "textInChatBox": "Happy birthday Cacrut! wish u all the best...",
+  "sendButtonLabel": "Send",
+  "text2": "That's what I was going to do.",
+  "text3": "But then I stopped.",
+  "text4": "I realised, I wanted to do something",
+  "text4Adjective": "special",
+  "text5Entry": "Because,",
+  "text5Content": "You are Special",
+  "smiley": ":)",
+  "bigTextPart1": "S",
+  "bigTextPart2": "O",
+  "wishHeading": "Happy Birthday!",
+  "outroText": "Okay, now come back and tell me if you liked it or not.",
+  "replayText": "Or click, if you want to watch it again.",
+  "outroSmiley": ":)"
+}
