@@ -8,6 +8,7 @@
   --bg: #f5f3ef;
   --bg-alt: #ebe8e2;
   --fg: #1a1a1a;
+  --fg-p: rgba(245, 243, 239, 0.6);
   --fg-muted: #6b6b6b;
   --accent: #e85d04;
   --accent-hover: #dc4c00;
@@ -22,6 +23,7 @@
   --bg: #0d0d0d;
   --bg-alt: #161616;
   --fg: #f5f3ef;
+  --fg-p: #0d0d0d;
   --fg-muted: #8a8a8a;
   --accent: #ff7b29;
   --accent-hover: #ff9050;
@@ -367,6 +369,7 @@ a:focus-visible {
 
 .btn-primary:hover {
   background: var(--accent-hover);
+  color: #ffffff;
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(232, 93, 4, 0.3);
 }
@@ -729,7 +732,7 @@ section {
 }
 
 .footer-brand p {
-  color: rgba(245, 243, 239, 0.6);
+  color: var(--fg-p);
   margin-top: 16px;
   max-width: 300px;
 }
@@ -748,7 +751,7 @@ section {
 }
 
 .footer-links a {
-  color: rgba(245, 243, 239, 0.6);
+  color: var(--fg-p);
   font-size: 0.9rem;
   transition: color 0.3s ease;
 }
@@ -759,7 +762,7 @@ section {
 
 .footer-bottom {
   padding-top: 30px;
-  border-top: 1px solid rgba(245, 243, 239, 0.1);
+  border-top: 1px solid var(--fg-p);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -769,7 +772,7 @@ section {
 
 .footer-copyright {
   font-size: 0.85rem;
-  color: rgba(245, 243, 239, 0.4);
+  color: var(--fg-p);
 }
 
 .footer-social {
