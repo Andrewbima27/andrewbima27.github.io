@@ -5,567 +5,410 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio website profesional Muhammad Andrew Bima - Creative Developer"
+      content="Portofolio Muhammad Andrew Bima - Mahasiswa dan Developer"
     />
     <meta name="author" content="Muhammad Andrew Bima" />
-    <title>Muhammad Andrew Bima - Creative Developer</title>
-
-    <!-- Fonts -->
+    <title>Muhammad Andrew Bima | Portofolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=DM+Sans:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Header -->
-    <header class="site-header" role="banner">
-      <div class="container">
-        <div class="header-inner">
-          <a href="#" class="logo" aria-label="Muhammad Andrew Bima - Home"
-            >MAB<span>.</span></a
-          >
-
-          <nav class="main-nav" role="navigation" aria-label="Navigasi utama">
-            <ul class="nav-list">
-              <li><a href="#tentang" class="nav-link">Tentang</a></li>
-              <li><a href="#proyek" class="nav-link">Proyek</a></li>
-              <li><a href="#keahlian" class="nav-link">Keahlian</a></li>
-              <li><a href="#kontak" class="nav-link">Kontak</a></li>
-            </ul>
-
-            <button class="theme-toggle" aria-label="Ganti tema" type="button">
-              <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-              </svg>
-            </button>
-
-            <button
-              class="mobile-menu-btn"
-              aria-label="Buka menu"
-              type="button"
-              aria-expanded="false"
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          </nav>
+    <header class="site-header" id="header">
+      <div class="header-container">
+        <div class="logo-group">
+          <div class="logo-initial" aria-hidden="true">
+            <span>M</span>
+            <span>A</span>
+            <span>B</span>
+          </div>
+          <div class="identity">
+            <h1 class="name">Muhammad Andrew Bima</h1>
+            <p class="npm">NPM: 202410715052</p>
+          </div>
         </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav" aria-label="Navigasi Utama">
+          <button
+            class="nav-toggle"
+            aria-label="Toggle Menu"
+            aria-expanded="false"
+          >
+            <span class="hamburger"></span>
+          </button>
+          <ul class="nav-list" role="list">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <button
+            class="theme-toggle"
+            aria-label="Ganti Tema"
+            title="Ganti Tema"
+          >
+            <!-- Icon Sun -->
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Icon Moon -->
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </nav>
       </div>
     </header>
 
-    <!-- Mobile Navigation -->
-    <nav class="mobile-nav" role="navigation" aria-label="Navigasi mobile">
-      <a href="#tentang" class="nav-link">Tentang</a>
-      <a href="#proyek" class="nav-link">Proyek</a>
-      <a href="#keahlian" class="nav-link">Keahlian</a>
-      <a href="#kontak" class="nav-link">Kontak</a>
-    </nav>
-
     <!-- Main Content -->
-    <main class="site-main" role="main">
-      <!-- Hero Section -->
-      <section class="hero-section" aria-labelledby="hero-title">
-        <div class="parallax-bg" aria-hidden="true">
-          <div class="parallax-shape shape-1"></div>
-          <div class="parallax-shape shape-2"></div>
-          <div class="parallax-shape shape-3"></div>
-        </div>
-
-        <div class="container">
-          <div class="hero-content">
-            <span class="hero-label">Creative Developer</span>
-            <h1 id="hero-title" class="hero-title">
-              Halo, Saya <span class="accent">Muhammad Andrew Bima</span>
-            </h1>
-            <p class="hero-description">
-              Saya menciptakan pengalaman digital yang memukau melalui kode yang
-              bersih dan desain yang thoughtful. Fokus pada performa,
-              aksesibilitas, dan keindahan visual.
+    <main class="main-content">
+      <!-- Hero Section with Parallax -->
+      <section class="hero-section parallax-container" id="home">
+        <div class="parallax-bg" data-speed="0.3"></div>
+        <div class="hero-content">
+          <div class="hero-text reveal-up">
+            <p class="greeting">Selamat Datang</p>
+            <h2 class="hero-title">
+              Saya <span class="highlight">Muhammad Andrew Bima</span>
+            </h2>
+            <p class="hero-subtitle">
+              Mahasiswa | Web Developer | Creative Thinker
             </p>
-            <div class="hero-actions">
-              <a href="#proyek" class="btn btn-primary">
-                Lihat Karya
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </a>
-              <a href="#kontak" class="btn btn-secondary">Hubungi Saya</a>
+          </div>
+          <div class="scroll-indicator" aria-hidden="true">
+            <div class="mouse">
+              <div class="wheel"></div>
             </div>
+            <p>Scroll ke bawah</p>
           </div>
         </div>
       </section>
 
       <!-- About Section -->
-      <section id="tentang" class="about-section" aria-labelledby="about-title">
-        <div class="container">
+      <section class="about-section" id="about">
+        <div class="section-container">
+          <h2 class="section-title reveal-up">Tentang Saya</h2>
+
           <div class="about-grid">
-            <div class="about-image reveal" aria-hidden="true">
-              <div class="about-image-inner">MAB</div>
+            <!-- Profile Card -->
+            <div class="profile-card reveal-left">
+              <div class="photo-frame">
+                <div class="photo-placeholder">
+                  <img
+                    src="assets/images/dru.JPEG"
+                    alt="Foto Muhammad Andrew Bima"
+                  />
+                </div>
+                <div class="photo-ring"></div>
+              </div>
+              <div class="biodata">
+                <h3 class="biodata-name">Muhammad Andrew Bima</h3>
+                <ul class="biodata-list">
+                  <li>
+                    <span class="label">Tanggal Lahir</span>
+                    <span class="value">27 Maret 2004</span>
+                  </li>
+                  <li>
+                    <span class="label">Usia</span>
+                    <span class="value" id="age">20 Tahun</span>
+                  </li>
+                  <li>
+                    <span class="label">NPM</span>
+                    <span class="value">202410715052</span>
+                  </li>
+                  <li>
+                    <span class="label">Status</span>
+                    <span class="value">Mahasiswa</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="about-text reveal">
-              <header class="section-header">
-                <span class="section-label">Tentang Saya</span>
-                <h2 id="about-title" class="section-title">
-                  Mengubah ide menjadi realitas digital
-                </h2>
-              </header>
-              <article>
-                <h3 class="visually-hidden">Biografi</h3>
-                <p>
-                  Dengan pengalaman lebih dari 5 tahun dalam pengembangan web,
-                  saya telah membantu berbagai startup dan bisnis mewujudkan
-                  visi digital mereka. Pendekatan saya menggabungkan keahlian
-                  teknis dengan pemahaman mendalam tentang UX.
+
+            <div class="content-wrapper">
+              <!-- Article: Hobbies -->
+              <article class="hobbies-article reveal-right">
+                <h3 class="article-title">Hobi dan Minat</h3>
+                <p class="article-intro">
+                  Beberapa hal yang saya gemari dan sering lakukan di waktu
+                  luang.
                 </p>
-                <p>
-                  Saya percaya bahwa kode yang baik adalah kode yang tidak hanya
-                  berfungsi, tetapi juga mudah dipelihara dan skalabel. Setiap
-                  proyek adalah kesempatan untuk menciptakan sesuatu yang
-                  bermakna.
-                </p>
+
+                <div class="hobbies-list">
+                  <div class="hobby-item" data-level="80">
+                    <div class="hobby-info">
+                      <span class="hobby-name">Coding</span>
+                      <span class="hobby-percent">80%</span>
+                    </div>
+                    <div class="hobby-bar">
+                      <div class="hobby-progress" style="--progress: 80%"></div>
+                    </div>
+                  </div>
+
+                  <div class="hobby-item" data-level="70">
+                    <div class="hobby-info">
+                      <span class="hobby-name">Gaming</span>
+                      <span class="hobby-percent">70%</span>
+                    </div>
+                    <div class="hobby-bar">
+                      <div class="hobby-progress" style="--progress: 70%"></div>
+                    </div>
+                  </div>
+
+                  <div class="hobby-item" data-level="75">
+                    <div class="hobby-info">
+                      <span class="hobby-name">Membaca</span>
+                      <span class="hobby-percent">75%</span>
+                    </div>
+                    <div class="hobby-bar">
+                      <div class="hobby-progress" style="--progress: 75%"></div>
+                    </div>
+                  </div>
+
+                  <div class="hobby-item" data-level="85">
+                    <div class="hobby-info">
+                      <span class="hobby-name">Photography</span>
+                      <span class="hobby-percent">85%</span>
+                    </div>
+                    <div class="hobby-bar">
+                      <div class="hobby-progress" style="--progress: 85%"></div>
+                    </div>
+                  </div>
+
+                  <div class="hobby-item" data-level="85">
+                    <div class="hobby-info">
+                      <span class="hobby-name">Music</span>
+                      <span class="hobby-percent">85%</span>
+                    </div>
+                    <div class="hobby-bar">
+                      <div class="hobby-progress" style="--progress: 85%"></div>
+                    </div>
+                  </div>
+                </div>
               </article>
-              <div class="stats-grid">
-                <div class="stat-item">
-                  <div class="stat-number">20+</div>
-                  <div class="stat-label">Proyek Selesai</div>
+
+              <!-- Aside: Quotes & Social -->
+              <aside class="quotes-aside reveal-right" style="--delay: 0.2s">
+                <div class="quote-card">
+                  <blockquote>
+                    <p>
+                      "My unmatched perspicacity coupled with sheer
+                      indefatigability makes me a feared opponent in any realm
+                      of human endeavor."
+                    </p>
+                    <cite>~ Emory Tate</cite>
+                  </blockquote>
                 </div>
-                <div class="stat-item">
-                  <div class="stat-number">20+</div>
-                  <div class="stat-label">Klien Puas</div>
+
+                <div class="social-section">
+                  <h4>Temukan Saya</h4>
+                  <ul class="social-links" role="list">
+                    <li>
+                      <a
+                        href="https://instagram.com/redrrew"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link"
+                        aria-label="Instagram"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <rect
+                            x="2"
+                            y="2"
+                            width="20"
+                            height="20"
+                            rx="5"
+                            ry="5"
+                          ></rect>
+                          <path
+                            d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                          ></path>
+                          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        <span>Instagram</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://twitter.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link"
+                        aria-label="Twitter"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                          ></path>
+                        </svg>
+                        <span>Twitter</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/Andrewbima27"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link"
+                        aria-label="GitHub"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                        <span>GitHub</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://tiktok.com/@douxxxie"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link"
+                        aria-label="TikTok"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"
+                          />
+                        </svg>
+                        <span>TikTok</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://linkedin.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link"
+                        aria-label="LinkedIn"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path
+                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                          ></path>
+                          <rect x="2" y="9" width="4" height="12"></rect>
+                          <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <span>LinkedIn</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="stat-item">
-                  <div class="stat-number">5+</div>
-                  <div class="stat-label">Tahun Pengalaman</div>
-                </div>
-              </div>
+              </aside>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Projects Section -->
-      <section
-        id="proyek"
-        class="projects-section"
-        aria-labelledby="projects-title"
-      >
-        <div class="container">
-          <header class="section-header reveal">
-            <span class="section-label">Portfolio</span>
-            <h2 id="projects-title" class="section-title">
-              Proyek terbaru yang telah saya kerjakan
-            </h2>
-          </header>
-
-          <div class="projects-grid">
-            <article class="project-card reveal">
-              <figure class="project-image">
-                <div class="project-image-placeholder" aria-hidden="true">
-                  01
-                </div>
-              </figure>
-              <div class="project-content">
-                <div class="project-tags">
-                  <span class="project-tag">React</span>
-                  <span class="project-tag">Node.js</span>
-                  <span class="project-tag">MongoDB</span>
-                </div>
-                <h3 class="project-title">E-Commerce Platform</h3>
-                <p class="project-excerpt">
-                  Platform e-commerce modern dengan fitur real-time inventory
-                  dan payment gateway terintegrasi.
-                </p>
-                <a
-                  href="#"
-                  class="project-link"
-                  aria-label="Lihat detail proyek E-Commerce Platform"
-                >
-                  Lihat Detail
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <figure class="project-image">
-                <div class="project-image-placeholder" aria-hidden="true">
-                  02
-                </div>
-              </figure>
-              <div class="project-content">
-                <div class="project-tags">
-                  <span class="project-tag">Vue.js</span>
-                  <span class="project-tag">Firebase</span>
-                  <span class="project-tag">Tailwind</span>
-                </div>
-                <h3 class="project-title">Task Management App</h3>
-                <p class="project-excerpt">
-                  Aplikasi manajemen tugas kolaboratif dengan fitur drag-drop
-                  dan real-time sync.
-                </p>
-                <a
-                  href="#"
-                  class="project-link"
-                  aria-label="Lihat detail proyek Task Management App"
-                >
-                  Lihat Detail
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <figure class="project-image">
-                <div class="project-image-placeholder" aria-hidden="true">
-                  03
-                </div>
-              </figure>
-              <div class="project-content">
-                <div class="project-tags">
-                  <span class="project-tag">Next.js</span>
-                  <span class="project-tag">Prisma</span>
-                  <span class="project-tag">PostgreSQL</span>
-                </div>
-                <h3 class="project-title">Healthcare Dashboard</h3>
-                <p class="project-excerpt">
-                  Dashboard analitik untuk klinik kesehatan dengan visualisasi
-                  data interaktif.
-                </p>
-                <a
-                  href="#"
-                  class="project-link"
-                  aria-label="Lihat detail proyek Healthcare Dashboard"
-                >
-                  Lihat Detail
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </a>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <figure class="project-image">
-                <div class="project-image-placeholder" aria-hidden="true">
-                  04
-                </div>
-              </figure>
-              <div class="project-content">
-                <div class="project-tags">
-                  <span class="project-tag">TypeScript</span>
-                  <span class="project-tag">GraphQL</span>
-                  <span class="project-tag">AWS</span>
-                </div>
-                <h3 class="project-title">FinTech Mobile App</h3>
-                <p class="project-excerpt">
-                  Aplikasi mobile banking dengan keamanan tinggi dan UX yang
-                  intuitif.
-                </p>
-                <a
-                  href="#"
-                  class="project-link"
-                  aria-label="Lihat detail proyek FinTech Mobile App"
-                >
-                  Lihat Detail
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Skills Section with Aside -->
-      <section
-        id="keahlian"
-        class="skills-section"
-        aria-labelledby="skills-title"
-      >
-        <div class="container">
-          <div class="skills-container">
-            <div>
-              <header class="section-header reveal">
-                <span class="section-label">Keahlian</span>
-                <h2 id="skills-title" class="section-title">
-                  Teknologi yang saya kuasai
-                </h2>
-              </header>
-
-              <div class="skills-list">
-                <article class="skill-item reveal">
-                  <div class="skill-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <polygon
-                        points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
-                      ></polygon>
-                      <line x1="12" y1="22" x2="12" y2="15.5"></line>
-                      <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
-                    </svg>
-                  </div>
-                  <h3 class="skill-name">Frontend Development</h3>
-                  <p>React, Vue.js, Next.js, TypeScript</p>
-                  <div
-                    class="skill-level"
-                    role="progressbar"
-                    aria-valuenow="55"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <div class="skill-level-fill" style="width: 55%"></div>
-                  </div>
-                </article>
-
-                <article class="skill-item reveal">
-                  <div class="skill-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <rect
-                        x="2"
-                        y="3"
-                        width="20"
-                        height="14"
-                        rx="2"
-                        ry="2"
-                      ></rect>
-                      <line x1="8" y1="21" x2="16" y2="21"></line>
-                      <line x1="12" y1="17" x2="12" y2="21"></line>
-                    </svg>
-                  </div>
-                  <h3 class="skill-name">Backend Development</h3>
-                  <p>Node.js, Express, Python, Go</p>
-                  <div
-                    class="skill-level"
-                    role="progressbar"
-                    aria-valuenow="70"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <div class="skill-level-fill" style="width: 77%"></div>
-                  </div>
-                </article>
-
-                <article class="skill-item reveal">
-                  <div class="skill-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                      <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                      <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                    </svg>
-                  </div>
-                  <h3 class="skill-name">Database</h3>
-                  <p>PostgreSQL, MongoDB, Redis, Firebase</p>
-                  <div
-                    class="skill-level"
-                    role="progressbar"
-                    aria-valuenow="70"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <div class="skill-level-fill" style="width: 70%"></div>
-                  </div>
-                </article>
-
-                <article class="skill-item reveal">
-                  <div class="skill-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                      <path d="M2 17l10 5 10-5"></path>
-                      <path d="M2 12l10 5 10-5"></path>
-                    </svg>
-                  </div>
-                  <h3 class="skill-name">DevOps & Cloud</h3>
-                  <p>AWS, Docker, CI/CD, Kubernetes</p>
-                  <div
-                    class="skill-level"
-                    role="progressbar"
-                    aria-valuenow="40"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <div class="skill-level-fill" style="width: 40%"></div>
-                  </div>
-                </article>
-              </div>
-            </div>
-
-            <aside
-              id="kontak"
-              class="contact-aside reveal"
-              aria-labelledby="aside-title"
-            >
-              <h2 id="aside-title" class="aside-title">Hubungi Saya</h2>
-              <ul class="contact-list">
-                <li class="contact-item">
-                  <a
-                    href="mailto:andrew.bima27@gmail.com"
-                    aria-label="Kirim email ke andrew.bima27@gmail.com"
-                  >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path
-                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                      ></path>
-                      <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                    <span>andrew.bima27@gmail.com</span>
-                  </a>
-                </li>
-                <li class="contact-item">
-                  <a
-                    href="tel:+628986987192"
-                    aria-label="Telepon +62 898 6987 192"
-                  >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path
-                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                      ></path>
-                    </svg>
-                    <span>+62 898 6987 192</span>
-                  </a>
-                </li>
-                <li class="contact-item">
-                  <a
-                    href="https://github.com/Andrewbima27"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    aria-label="Kunjungi profil GitHub (buka di tab baru)"
-                  >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path
-                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                      ></path>
-                    </svg>
-                    <span>GitHub</span>
-                  </a>
-                </li>
-                <li class="contact-item">
-                  <a
-                    href="https://linkedin.com/in/muhammadandrewbima"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    aria-label="Kunjungi profil LinkedIn (buka di tab baru)"
-                  >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path
-                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                      ></path>
-                      <rect x="2" y="9" width="4" height="12"></rect>
-                      <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                    <span>LinkedIn</span>
-                  </a>
-                </li>
-              </ul>
-            </aside>
+      <!-- Contact Section -->
+      <section class="contact-section parallax-container" id="contact">
+        <div class="parallax-bg" data-speed="0.2"></div>
+        <div class="section-container">
+          <h2 class="section-title light reveal-up">Hubungi Saya</h2>
+          <div class="contact-content reveal-up">
+            <p>Tertarik untuk berkolaborasi atau sekadar menyapa?</p>
+            <a href="mailto:andrew.bima27@email.com" class="contact-btn">
+              <span>Kirim Email</span>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="site-footer" role="contentinfo">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <a href="#" class="logo" aria-label="Muhammad Andrew Bima - Home"
-              >MAB<span style="color: var(--accent)">.</span></a
-            >
-            <p>
-              Menciptakan pengalaman digital yang bermakna melalui kode dan
-              desain yang thoughtful.
-            </p>
-          </div>
-          <nav aria-label="Navigasi footer">
-            <h3 class="footer-title">Navigasi</h3>
-            <ul class="footer-links">
-              <li><a href="#tentang">Tentang</a></li>
-              <li><a href="#proyek">Proyek</a></li>
-              <li><a href="#keahlian">Keahlian</a></li>
-              <li><a href="#kontak">Kontak</a></li>
-            </ul>
-          </nav>
-          <div>
-            <h3 class="footer-title">Layanan</h3>
-            <ul class="footer-links">
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">UI/UX Design</a></li>
-              <li><a href="#">Consulting</a></li>
-              <li><a href="#">Code Review</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p class="footer-copyright">
-            2025 Muhammad Andrew Bima. Hak cipta dilindungi.
-          </p>
-          <div class="footer-social">
-            <a
-              href="https://github.com/Andrewbima27"
-              rel="noopener noreferrer"
-              target="_blank"
-              aria-label="GitHub (buka di tab baru)"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                ></path>
-              </svg>
-            </a>
-            <a
-              href="https://linkedin.com/in/muhammadandrewbima"
-              rel="noopener noreferrer"
-              target="_blank"
-              aria-label="LinkedIn (buka di tab baru)"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                ></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
-            </a>
-            <a
-              href="https://twitter.com/muhammadandrewbima"
-              rel="noopener noreferrer"
-              target="_blank"
-              aria-label="Twitter (buka di tab baru)"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
-                ></path>
-              </svg>
-            </a>
-          </div>
-        </div>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p class="copyright">
+          &copy; 2025 Muhammad Andrew Bima. All rights reserved.
+        </p>
+        <p class="footer-note">
+          Dibuat dengan sepenuh hati menggunakan HTML5, CSS3, dan JavaScript
+        </p>
       </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="js/main.js"></script>
   </body>
 </html>
